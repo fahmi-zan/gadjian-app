@@ -14,7 +14,7 @@ function Header() {
                     </svg>
                     <input type="text" className='bg-transparent outline-none mx-2 p-1 w-full text-lg' placeholder='Find Personnels' />
                 </div>
-                <button className='bg-primary w-full p-2 my-2 md:w-56 md:h-12'>
+                <button className='bg-primary shadow-md w-full p-2 my-2 md:w-56 md:h-12'>
                     <p className='uppercase mx-2 text-xl md:text-sm font-bold text-white flex justify-between items-center'>Add Personnels
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
