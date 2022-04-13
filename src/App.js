@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from "./components/Navbar";
-// import Sidenav from './components/Sidenav';
+import Sidenav from './components/Sidenav';
 import Header from "./components/Header";
 import Content from "./components/Content";
 import { useDispatch } from 'react-redux'
@@ -18,9 +18,13 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Sidenav /> */}
-      <Header />
-      <Content />
+      <div className='flex'>
+        <Sidenav />
+        <div className='grid grid-rows-1 mx-auto'>
+          <Header />
+          <Content />
+        </div>
+      </div>
     </>
   );
 }
