@@ -1,10 +1,27 @@
-import './App.css';
+import React, { useEffect } from 'react';
+import Navbar from "./components/Navbar";
+// import Sidenav from './components/Sidenav';
+import Header from "./components/Header";
+import Content from "./components/Content";
+import { useDispatch } from 'react-redux'
+import allStore from './store/actions';
+
 
 function App() {
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(allStore.getPost())
+  }, [dispatch]);
+
   return (
-    <h1 className="text-9xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+      <Navbar />
+      {/* <Sidenav /> */}
+      <Header />
+      <Content />
+    </>
   );
 }
 
